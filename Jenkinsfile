@@ -6,6 +6,11 @@ pipeline {
                 echo 'Building'
             }
         }
+          stage('Install packaging') {
+            steps {
+                echo 'Building'
+            }
+        }
         stage('Test') {
             steps {
                 echo 'Testing'
