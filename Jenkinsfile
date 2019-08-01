@@ -14,9 +14,12 @@ def notifySlack(String buildStatus = 'STARTED') {
         color = '#FF9FA1'
     }
 
+    checkout scm
+    result = sh (script: "git log -1 | grep '\\[ci skip\\]'", returnStatus: true) 
+
     def msg = "${buildStatus}: `${env.JOB_NAME}` #${env.BUILD_NUMBER}:\n${env.BUILD_URL}"
 
-    slackSend(color: color, message: msg)
+    slackSend(color: color, message: result)
 }
 
 node {
