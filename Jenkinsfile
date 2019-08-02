@@ -6,7 +6,6 @@ pipeline {
         notifyStarted()
       }
     }
-        ...
   }
   post {
     success {
