@@ -1,3 +1,14 @@
 {
-    
+  "name": "jenkines",
+  "devDependencies": {
+    "semantic-release": "^15.13.21"
+  },
+  "version": "0.0.0-development",
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abdelrahmanahmed/jenkins-sample.git"
+  }
 }
