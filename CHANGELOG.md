@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/abdelrahmanahmed/jenkins-sample/compare/v0.0.2...v0.0.3) (2019-08-27)
+
+
+### Features
+
+* added new modules ([fe5cf3b](https://github.com/abdelrahmanahmed/jenkins-sample/commit/fe5cf3b))
+* added new routes ([fc97717](https://github.com/abdelrahmanahmed/jenkins-sample/commit/fc97717))
+
 ### [0.0.2](https://github.com/abdelrahmanahmed/jenkins-sample/compare/v0.0.1...v0.0.2) (2019-08-27)
 
 
