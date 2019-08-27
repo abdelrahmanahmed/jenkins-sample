@@ -4,9 +4,11 @@
   "devDependencies": {
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
-    "semantic-release": "^15.13.24"
+    "semantic-release": "^15.13.24",
+    "standard-version": "^7.0.0"
   },
   "scripts": {
+    "release": "standard-version",
     "semantic-release": "semantic-release",
     "commit": "git-cz"
   },
