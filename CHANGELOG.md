@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/abdelrahmanahmed/jenkins-sample/compare/v0.0.1...v0.0.2) (2019-08-27)
+
+
+### Bug Fixes
+
+* removed from config ([15f5980](https://github.com/abdelrahmanahmed/jenkins-sample/commit/15f5980))
+
+
+### Features
+
+* added new controller ([02763e8](https://github.com/abdelrahmanahmed/jenkins-sample/commit/02763e8))
+
 ### [0.0.1](https://github.com/abdelrahmanahmed/jenkins-sample/compare/v0.0.0...v0.0.1) (2019-08-27)
 
 
