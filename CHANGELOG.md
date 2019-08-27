@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/abdelrahmanahmed/jenkins-sample/compare/v0.0.3...v0.1.0) (2019-08-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **index:** it doesnt support foo-bar
+
+### Features
+
+* added tests ([96b0c97](https://github.com/abdelrahmanahmed/jenkins-sample/commit/96b0c97))
+* **index:** breaking change ([2ff30b9](https://github.com/abdelrahmanahmed/jenkins-sample/commit/2ff30b9))
+
 ### [0.0.3](https://github.com/abdelrahmanahmed/jenkins-sample/compare/v0.0.2...v0.0.3) (2019-08-27)
 
 

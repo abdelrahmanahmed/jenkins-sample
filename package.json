@@ -1,6 +1,6 @@
 {
   "name": "jenkines",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "devDependencies": {
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
