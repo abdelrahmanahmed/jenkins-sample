@@ -3,14 +3,15 @@
 	"repositoryUrl": "https://github.com/abdelrahmanahmed/jenkins-sample.git",
 	"plugins": [
 		"@semantic-release/commit-analyzer",
+		"@semantic-release/release-notes-generator",
 		[
 			"@semantic-release/changelog",
 			{
-				"changelogFile": "docs/CHANGELOG.md"
+				"changelogFile": "CHANGELOG.md"
 			}
 		]
 	],
-	"dryRun": true,
+	"dryRun": false,
 	"ci": false,
 	"debug": true
 }
