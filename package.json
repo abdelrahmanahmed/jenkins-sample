@@ -9,7 +9,7 @@
   },
   "scripts": {
     "semantic-release": "semantic-release",
-    "commit": "npx git-cz"
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,10 @@
   },
   "dependencies": {
     "semantic-release-cli": "^5.2.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
