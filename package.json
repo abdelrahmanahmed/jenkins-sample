@@ -1,6 +1,6 @@
 {
   "name": "jenkines",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "devDependencies": {
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
@@ -8,29 +8,14 @@
     "standard-version": "^7.0.0"
   },
   "scripts": {
-    "release": "standard-version",
     "semantic-release": "semantic-release",
-    "commit": "git-cz"
+    "commit": "npx git-cz"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/abdelrahmanahmed/jenkins-sample.git"
   },
-  "release": {
-    "branches": [
-      "master"
-    ],
-    "repositoryUrl": "https://github.com/abdelrahmanahmed/jenkins-sample.git",
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
-      "@semantic-release/git"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+  "dependencies": {
+    "semantic-release-cli": "^5.2.1"
   }
 }
