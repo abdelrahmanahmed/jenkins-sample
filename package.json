@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/exec": "^3.3.6",
+    "@semantic-release/git": "^7.0.16",
     "semantic-release-cli": "^5.2.1"
   },
   "config": {
