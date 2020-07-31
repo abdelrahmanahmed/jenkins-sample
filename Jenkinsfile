@@ -1,10 +1,20 @@
 pipeline {
     agent any
     stages {
-        stage('Test') {
+        stage('detect branch') {
             steps {
-                sh 'node --version'
+          script{
+               if (env.BRANCH_NAME.equals('master') ){
+                   
+               echo "hello master"
             }
+            else if(env.BRANCH_NAME.equals('develop')){
+              echo "hello develop"
+            }
+               }
+
+        
+          }
         }
     }
 }
