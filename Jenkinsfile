@@ -1,15 +1,27 @@
 pipeline {
-       agent {
-        docker {
-            image 'node:6-alpine' 
-            args '-p 3000:3000' 
+  agent any
+    
+  tools {nodejs "node"}
+    
+  stages {
+        
+    stage('Cloning Git') {
+      steps {
+    echo "Build Preparation"
+            checkout scm
         }
     }
-  stages {
-    stage('test') {
+        
+    stage('Install dependencies') {
       steps {
-        echo "hello world"
+        sh 'npm install'
       }
     }
+     
+    stage('Test') {
+      steps {
+         sh 'npm test'
+      }
+    }      
   }
 }
