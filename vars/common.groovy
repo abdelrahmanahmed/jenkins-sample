@@ -17,11 +17,11 @@ def call() {
         
           }
         }
-        stage("Deploy") {
-            if (config.deploy) {
-                sh "npm publish"
-            }
-        }
+        // stage("Deploy") {
+        //     if (config.deploy) {
+        //         sh "npm publish"
+        //     }
+        // }
     }
 }
 }
