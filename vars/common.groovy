@@ -1,7 +1,6 @@
 def call(boolean deploy ) {
     pipeline {
     agent any
-    stages {
         stage('detect branch') {
             steps {
           script{
@@ -22,6 +21,6 @@ def call(boolean deploy ) {
                 sh "npm publish"
             }
         }
-    }
+    
 }
 }
