@@ -1,4 +1,5 @@
-pipeline {
+def call(Map config=[:], Closure body) {
+    pipeline {
     agent any
     stages {
         stage('detect branch') {
@@ -16,5 +17,12 @@ pipeline {
         
           }
         }
+        stage("Deploy") {
+            if (config.deploy) {
+                sh "npm publish"
+            }
+        }
     }
+    body()
+}
 }
