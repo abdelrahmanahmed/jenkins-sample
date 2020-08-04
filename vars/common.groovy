@@ -1,4 +1,4 @@
-def call(boolean deploy ) {
+def call() {
     pipeline {
     agent any
         stage('detect branch') {
@@ -6,7 +6,7 @@ def call(boolean deploy ) {
           script{
                if (env.BRANCH_NAME.equals('master') ){
                    
-               echo "hello master"
+               echo "hello master from common"
             }
             else if(env.BRANCH_NAME.equals('develop')){
               echo "hello develop"
@@ -17,9 +17,7 @@ def call(boolean deploy ) {
           }
         }
         stage("Deploy") {
-            if (deploy) {
-                sh "npm publish"
-            }
+ echo "hello from common"
         }
     
 }
