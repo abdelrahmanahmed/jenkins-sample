@@ -1,4 +1,4 @@
-def call(Map config=[:]) {
+def call(boolean deploy ) {
     pipeline {
     agent any
     stages {
@@ -18,7 +18,7 @@ def call(Map config=[:]) {
           }
         }
         stage("Deploy") {
-            if (config.deploy) {
+            if (deploy) {
                 sh "npm publish"
             }
         }
