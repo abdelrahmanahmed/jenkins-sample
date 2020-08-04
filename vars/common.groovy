@@ -1,4 +1,4 @@
-def call() {
+def call(Map config=[:]) {
     pipeline {
     agent any
     stages {
@@ -7,7 +7,7 @@ def call() {
           script{
                if (env.BRANCH_NAME.equals('master') ){
                    
-               echo "hello master from common file"
+               echo "hello master"
             }
             else if(env.BRANCH_NAME.equals('develop')){
               echo "hello develop"
@@ -16,6 +16,11 @@ def call() {
 
         
           }
+        }
+        stage("Deploy") {
+            if (config.deploy) {
+                sh "npm publish"
+            }
         }
     }
 }
