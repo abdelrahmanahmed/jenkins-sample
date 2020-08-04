@@ -1,3 +1,3 @@
 node {
-    common deploy: false
+    common false
 }
