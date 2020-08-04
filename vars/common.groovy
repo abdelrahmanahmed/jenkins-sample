@@ -1,24 +1,10 @@
 def call() {
-    pipeline {
-    agent any
-        stage('detect branch') {
-            steps {
-          script{
-               if (env.BRANCH_NAME.equals('master') ){
-                   
-               echo "hello master from common"
-            }
-            else if(env.BRANCH_NAME.equals('develop')){
-              echo "hello develop"
-            }
-               }
-
-        
-          }
+ node {
+        stage("Install") {
+            echo "npm install"
         }
-        stage("Deploy") {
- echo "hello from common"
+        stage("Test") {
+            echo "npm test"
         }
-    
-}
+    }
 }
