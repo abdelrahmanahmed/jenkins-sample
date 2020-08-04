@@ -1,10 +1,10 @@
 def call() {
  node {
         stage("Install") {
-            echo "npm install"
+            echo "npm install from common files"
         }
         stage("Test") {
-            echo "npm test"
+            echo "npm test from common files"
         }
     }
 }
