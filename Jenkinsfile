@@ -1,3 +1,1 @@
-node {
-    common
-}
+common()
